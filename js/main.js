@@ -24,6 +24,7 @@ English.prototype._init = function (data) {
     this.target = null;
     this.a = $('#a');
     this.q = $('#q');
+    this.aList = $('#answer_list');
 
     this.newInit();
 };
@@ -55,6 +56,7 @@ English.prototype.checkRandom = function () {
 };
 
 English.prototype.newQuestion = function () {
+    this.answerList();
     this.a.val('').focus();
     this.newInit();
 };
@@ -115,14 +117,14 @@ English.prototype.hintClick = function () {
     });
 };
 
+English.prototype.answerList = function () {
+    var value = this.a.val();
 
+    this.aList.prepend('<span>' + value + '</span>');
 
+    console.log(value, this.target.eng);
 
-
-
-
-
-
-
-
-
+    if (value === this.target.eng) {
+        this.aList.find('span').first().addClass('ok');
+    }
+};

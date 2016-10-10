@@ -19,12 +19,15 @@
     transition: all 0.5s;
 }
 #a:focus {
-    border: 2px solid #ff4641;
-    outline: 2px solid #ff4641;
+    border: 2px solid #ff5b47;
+    outline: 2px solid #ff5b47;
 }
 #a.ok:focus {
     border: 2px solid #69ca2b;
     outline: 2px solid #69ca2b;
+}
+.btn_group {
+    margin-bottom: 10px;
 }
 .btn {
     width: 390px;
@@ -46,6 +49,18 @@
 }
 .btn:hover {
     background: #69ca2b;
+}
+
+#answer_list {
+    width: 100%;
+}
+#answer_list span {
+    color: #ff5b47;
+    margin: 0 10px;
+    float: left;
+}
+#answer_list span.ok {
+    color: #69ca2b;
 }
 
 @media screen and (max-width: 800px) {
