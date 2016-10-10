@@ -5,65 +5,121 @@ $(function () {
         dataType: 'json',
         method: 'GET',
         success: function (data) {
-            english(data);
+            var eng = new English(data);
         }
     });
 
 });
 
 
-function english(data) {
-    this.itemLength = null;
-    this.random = null;
+var English = function (data) {
+    this._init(data);
+    this._initEvent();
+};
+
+English.prototype._init = function (data) {
+    this.data = data;
+    this.itemLength = this.data.length - 1;
+    this.random = 0;
     this.target = null;
 
-    this.init = function () {
-        this.initEvent();
-    };
+    this.newInit();
+};
 
-    this.initEvent = function () {
-        this.newWord();
-        this.next();
-    };
+English.prototype._initEvent = function () {
+    this.question();
+    this.inputAnswer();
+    this.nextClick();
+    this.hintClick();
+    this.inputEnterKey();
+};
 
-    this.newWord = function () {
-        this.itemLength = data.length - 1;
-        this.random = Math.floor((Math.random() * this.itemLength) + 1);
-        this.target = data[this.random];
+English.prototype.newInit = function () {
+    this.checkRandom();
+    this.target = this.data[this.random];
 
-        console.log(this.random);
+    this.question();
+};
 
-        this.hint();
-        this.result();
-    };
+English.prototype.checkRandom = function () {
+    var ran = Math.floor((Math.random() * this.itemLength) + 1);
 
-    this.hint = function () {
-        $('#q').html(this.target.kor);
-    };
+    if (ran === this.random) {
+        this.checkRandom();
+    } else {
+        this.random = ran;
+    }
+};
 
-    this.result = function () {
-        var that = this;
-        $('#a').on('keyup', function () {
-            var r = $(this).val();
+English.prototype.newQuestion = function () {
+    $('#a').val('');
+    this.newInit();
+};
 
-            if (r === that.target.eng) {
-                $('#check').css({
-                    background: 'green'
-                });
-            } else {
-                $('#check').css({
-                    background: 'red'
-                });
-            }
-        });
-    };
+English.prototype.question = function () {
+    $('#q').html(this.target.kor);
+};
 
-    this.next = function () {
-        var that = this;
-        $('#next').on('click', function () {
-            that.newWord();
-        });
-    };
+English.prototype.checkAnswer = function () {
+    var r = $('#a').val();
 
-    init();
-}
+    if (r === this.target.eng) {
+        $('#a').addClass('ok');
+    } else {
+        $('#a').removeClass('ok');
+    }
+};
+
+English.prototype.inputAnswer = function () {
+    var that = this;
+
+    $('#a').on('keyup', function () {
+        that.checkAnswer();
+    });
+};
+
+English.prototype.inputEnterKey = function () {
+    var that = this;
+
+    $('#a').on('keyup', function (e) {
+        if (e.which === 13) that.newQuestion();
+    });
+};
+
+English.prototype.nextClick = function () {
+    var that = this;
+
+    $('#next').on('click', function () {
+        that.newQuestion();
+    });
+};
+
+English.prototype.hint = function () {
+    var r = $('#a').val();
+    var index = 2;
+
+    if (r.length === 2) index = 4;
+
+    var eng = this.target.eng.substring(0, index);
+    $('#a').val(eng);
+};
+
+English.prototype.hintClick = function () {
+    var that = this;
+
+    $('#hint').on('click', function () {
+        that.hint();
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+
