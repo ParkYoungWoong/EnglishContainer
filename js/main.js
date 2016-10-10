@@ -66,13 +66,16 @@ English.prototype.newInit = function () {
 };
 
 English.prototype.checkRandom = function () {
-    var ran = Math.floor((Math.random() * this.itemLength));
+    var ran = Math.floor((Math.random() * (this.itemLength + 1)));
 
     if (ran === this.random) {
         this.checkRandom();
+        return false;
     } else {
         this.random = ran;
     }
+
+    console.log(ran);
 };
 
 English.prototype.newQuestion = function () {
@@ -141,8 +144,6 @@ English.prototype.answerList = function () {
     var value = this.$a.val();
 
     this.$aList.prepend('<span>' + value + '</span>');
-
-    console.log(value, this.target.eng);
 
     if (value === this.target.eng) {
         this.$aList.find('span').first().addClass('ok');
