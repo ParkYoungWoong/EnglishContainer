@@ -22,6 +22,8 @@ English.prototype._init = function (data) {
     this.itemLength = this.data.length - 1;
     this.random = 0;
     this.target = null;
+    this.a = $('#a');
+    this.q = $('#q');
 
     this.newInit();
 };
@@ -35,6 +37,7 @@ English.prototype._initEvent = function () {
 };
 
 English.prototype.newInit = function () {
+    this.a.focus();
     this.checkRandom();
     this.target = this.data[this.random];
 
@@ -52,28 +55,28 @@ English.prototype.checkRandom = function () {
 };
 
 English.prototype.newQuestion = function () {
-    $('#a').val('');
+    this.a.val('').focus();
     this.newInit();
 };
 
 English.prototype.question = function () {
-    $('#q').html(this.target.kor);
+    this.q.html(this.target.kor);
 };
 
 English.prototype.checkAnswer = function () {
-    var r = $('#a').val();
+    var r = this.a.val();
 
     if (r === this.target.eng) {
-        $('#a').addClass('ok');
+        this.a.addClass('ok');
     } else {
-        $('#a').removeClass('ok');
+        this.a.removeClass('ok');
     }
 };
 
 English.prototype.inputAnswer = function () {
     var that = this;
 
-    $('#a').on('keyup', function () {
+    this.a.on('keyup', function () {
         that.checkAnswer();
     });
 };
@@ -81,7 +84,7 @@ English.prototype.inputAnswer = function () {
 English.prototype.inputEnterKey = function () {
     var that = this;
 
-    $('#a').on('keyup', function (e) {
+    this.a.on('keyup', function (e) {
         if (e.which === 13) that.newQuestion();
     });
 };
@@ -95,13 +98,13 @@ English.prototype.nextClick = function () {
 };
 
 English.prototype.hint = function () {
-    var r = $('#a').val();
+    var r = this.a.val();
     var index = 2;
 
     if (r.length === 2) index = 4;
 
     var eng = this.target.eng.substring(0, index);
-    $('#a').val(eng);
+    this.a.val(eng).focus();
 };
 
 English.prototype.hintClick = function () {
