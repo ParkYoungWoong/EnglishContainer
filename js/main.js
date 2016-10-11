@@ -176,7 +176,7 @@ English.prototype.lnbOpen = function () {
 };
 
 English.prototype.lnbClose = function () {
-    this.lnbPositionLeft = this.$lnb.width();
+    this.lnbPositionLeft = this.$lnb.outerWidth();
 
     var that = this;
 
