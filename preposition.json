@@ -13,7 +13,7 @@
     },
     {
         "eng": "across",
-        "kor": "가로질, 건너편에, 맞은편"
+        "kor": "가로질러, 건너편에, 맞은편"
     },
     {
         "eng": "after",
@@ -42,5 +42,201 @@
     {
         "eng": "around",
         "kor": "~둘레에, 주위에, 둥글게, 빙돌아"
+    },
+    {
+        "eng": "as",
+        "kor": "~처럼 ~로서"
+    },
+    {
+        "eng": "at",
+        "kor": "(시간, 장소)~에서, ~로"
+    },
+    {
+        "eng": "before",
+        "kor": "~보다 앞에"
+    },
+    {
+        "eng": "behind",
+        "kor": "~보다 뒤"
+    },
+    {
+        "eng": "below",
+        "kor": "(위치가)~보다 아래에"
+    },
+    {
+        "eng": "beneath",
+        "kor": "(접하여)아래에"
+    },
+    {
+        "eng": "beside",
+        "kor": "옆에, ~에 비해"
+    },
+    {
+        "eng": "besides",
+        "kor": "~외에"
+    },
+    {
+        "eng": "between",
+        "kor": "(위치, 시간, 양) 중간에, 사이에"
+    },
+    {
+        "eng": "beyond",
+        "kor": "~너머, ~저편에"
+    },
+    {
+        "eng": "by",
+        "kor": "~옆에서, ~에 의하여"
+    },
+    {
+        "eng": "despite",
+        "kor": "~에도 불구하고"
+    },
+    {
+        "eng": "down",
+        "kor": "(높은쪽에서)아래로"
+    },
+    {
+        "eng": "during",
+        "kor": "~하는 중에"
+    },
+    {
+        "eng": "except",
+        "kor": "~외에는"
+    },
+    {
+        "eng": "for",
+        "kor": "~을 위해, ~동안"
+    },
+    {
+        "eng": "from",
+        "kor": "~부터, ~에서"
+    },
+    {
+        "eng": "in",
+        "kor": "안에"
+    },
+    {
+        "eng": "inside",
+        "kor": "~의 내부에서"
+    },
+    {
+        "eng": "into",
+        "kor": "~안으로"
+    },
+    {
+        "eng": "like",
+        "kor": "~와 비슷한, ~처럼"
+    },
+    {
+        "eng": "near",
+        "kor": "~에 가까이"
+    },
+    {
+        "eng": "of",
+        "kor": "~의"
+    },
+    {
+        "eng": "off",
+        "kor": "~에서 떨어져서"
+    },
+    {
+        "eng": "on",
+        "kor": "(~의 표면)위에"
+    },
+    {
+        "eng": "onto",
+        "kor": "~(위)로, ~쪽으로"
+    },
+    {
+        "eng": "outside",
+        "kor": "~밖에"
+    },
+    {
+        "eng": "over",
+        "kor": "~의 위를 넘어서"
+    },
+    {
+        "eng": "past",
+        "kor": "지나서"
+    },
+    {
+        "eng": "per",
+        "kor": "각 ~에 대하여"
+    },
+    {
+        "eng": "regarding",
+        "kor": "~에 관하여"
+    },
+    {
+        "eng": "round",
+        "kor": "~을 돌아"
+    },
+    {
+        "eng": "since",
+        "kor": "~부터"
+    },
+    {
+        "eng": "than",
+        "kor": "~보다"
+    },
+    {
+        "eng": "through",
+        "kor": "~을 관통하여"
+    },
+    {
+        "eng": "to",
+        "kor": "~로, ~쪽으로"
+    },
+    {
+        "eng": "toward",
+        "kor": "~을 항하여"
+    },
+    {
+        "eng": "towards",
+        "kor": "~을 향하여(영국)"
+    },
+    {
+        "eng": "under",
+        "kor": "~아래에"
+    },
+    {
+        "eng": "underneath",
+        "kor": "(덮여서)~아래에"
+    },
+    {
+        "eng": "unlike",
+        "kor": "~와 다른"
+    },
+    {
+        "eng": "until",
+        "kor": "~ 때까지"
+    },
+    {
+        "eng": "up",
+        "kor": "위쪽으로"
+    },
+    {
+        "eng": "upon",
+        "kor": "(격식적으로)위쪽으로"
+    },
+    {
+        "eng": "versus",
+        "kor": "~에 대하여"
+    },
+    {
+        "eng": "via",
+        "kor": "~을 경유하여"
+    },
+    {
+        "eng": "with",
+        "kor": "~와 함께"
+    },
+    {
+        "eng": "within",
+        "kor": "~이내에"
+    },
+    {
+        "eng": "without",
+        "kor": "~없이"
     }
 ]

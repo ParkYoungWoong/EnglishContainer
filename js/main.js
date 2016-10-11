@@ -44,6 +44,7 @@ English.prototype.init = function (data) {
     this.$lnbClose = this.$lnb.find('.close_btn');
     this.$lnbOpen = $('#lnb_btn');
     this.$lnbMenu = this.$lnb.find('.menu');
+    this.lnbPositionLeft = null;
 
     this.newInit();
 };
@@ -153,14 +154,30 @@ English.prototype.lnbEvent = function () {
     var that = this;
 
     this.$lnbOpen.on('click', function () {
-        that.$lnb.stop().animate({ left: 0 }, 400);
+        that.lnbOpen();
     });
 
     this.$lnbClose.on('click', function () {
-        that.$lnb.stop().animate({ left: -400 }, 400);
+        that.lnbClose();
     });
 
     this.$lnbMenu.on('click', function () {
-        that.$lnb.stop().animate({ left: -400 }, 400);
+        that.lnbClose();
     });
+
+    $(window).on('resize', function () {
+        that.lnbClose();
+    });
+};
+
+English.prototype.lnbOpen = function () {
+    this.$lnb.stop().animate({ left: 0 }, 400);
+};
+
+English.prototype.lnbClose = function () {
+    this.lnbPositionLeft = this.$lnb.width();
+
+    var that = this;
+
+    this.$lnb.stop().animate({ left: -that.lnbPositionLeft }, 400);
 };
