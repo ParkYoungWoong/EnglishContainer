@@ -1,75 +1,75 @@
 [
   {
     "eng": "You spoke English",
-    "kor": "[1단순과거] You spoke English"
+    "kor": "[단순과거] You spoke English"
   }, {
     "eng": "English was spoken by you",
-    "kor": "[1단순과거/수동] English was spoken by you"
+    "kor": "[단순과거/수동] English was spoken by you"
   }, {
     "eng": "You were speaking English",
-    "kor": "[2과거진행] You were speaking English"
+    "kor": "[과거진행] You were speaking English"
   }, {
     "eng": "English was being spoken by you",
-    "kor": "[2과거진행/수동] English was being spoken by you"
+    "kor": "[과거진행/수동] English was being spoken by you"
   }, {
     "eng": "You had spoken English",
-    "kor": "[3과거완료] You had spoken English"
+    "kor": "[과거완료] You had spoken English"
   }, {
     "eng": "English had been spoken English",
-    "kor": "[3과거완료/수동] English had been spoken English"
+    "kor": "[과거완료/수동] English had been speaking English"
   }, {
     "eng": "You had been speaking English",
-    "kor": "[4과거완료진행] You had been speaking English"
+    "kor": "[과거완료진행] You had been speaking English"
   }, {
     "eng": "English had been speaking English",
-    "kor": "[4과거완료진행/수동] English had been speaking English"
+    "kor": "[과거완료진행/수동] English had been speaking English"
   }, {
     "eng": "You speak English",
-    "kor": "[1단순현재] You speak English"
+    "kor": "[단순현재] You speak English"
   }, {
     "eng": "English is spoken by you",
-    "kor": "[1단순현재/수동] English is spoken by you"
+    "kor": "[단순현재/수동] English is spoken by you"
   }, {
     "eng": "You are speaking English",
-    "kor": "[2현재진행] You are speaking English"
+    "kor": "[현재진행] You are speaking English"
   }, {
     "eng": "English is being spoken by you",
-    "kor": "[2현재진행/수동] English is being spoken by you"
+    "kor": "[현재진행/수동] English is being spoken by you"
   }, {
     "eng": "You have spoken English",
-    "kor": "[3현재완료] You have spoken English"
+    "kor": "[현재완료] You have spoken English"
   }, {
     "eng": "English has been spoken by you",
-    "kor": "[3현재완료/수동] English has been spoken by you"
+    "kor": "[현재완료/수동] English has been spoken by you"
   }, {
     "eng": "You have been speaking English",
-    "kor": "[4현재완료진행] You have been speaking English"
+    "kor": "[현재완료진행] You have been speaking English"
   }, {
     "eng": "English has been being spoken by you",
-    "kor": "[4현재완료진행/수동] English has been being spoken by you"
+    "kor": "[현재완료진행/수동] English has been being spoken by you"
   }, {
     "eng": "You will speak English",
-    "kor": "[1단순미래] You will speak English"
+    "kor": "[단순미래] You will speak English"
   }, {
     "eng": "English will be spoken by you",
-    "kor": "[1단순미래/수동] English will be spoken by you"
+    "kor": "[단순미래/수동] English will be spoken by you"
   }, {
     "eng": "You will be speaking English",
-    "kor": "[2미래진행] You will be speaking English"
+    "kor": "[미래진행] You will be speaking English"
   }, {
     "eng": "English will be being spoken by you",
-    "kor": "[2미래진행/수동] English will be being spoken by you"
+    "kor": "[미래진행/수동] English will be being spoken by you"
   }, {
     "eng": "You will have spoken English",
-    "kor": "[3미래완료] You will have spoken English"
+    "kor": "[미래완료] You will have spoken English"
   }, {
     "eng": "English will have been spoken by you",
-    "kor": "[3미래완료/수동] English will have been spoken by you"
+    "kor": "[미래완료/수동] English will have been spoken by you"
   }, {
     "eng": "You will have been speaking English",
-    "kor": "[4미래완료진행] You will have been speaking English"
+    "kor": "[미래완료진행] You will have been speaking English"
   }, {
     "eng": "English will have been being spoken by you",
-    "kor": "[4미래완료진행/수동] English will have been being spoken by you"
+    "kor": "[미래완료진행/수동] English will have been being spoken by you"
   }
 ]
